@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- title untuk memberikan judul pada jendela browser -->
+	<title>Form Input</title>
+</head>
+<!-- javascript untuk memberikan function berupa perintah variabel val1 dengan if else -->
+	<script language="JavaScript">
+		function test(){
+		var val1=document.kirim. T1. value
+		if (val1%2==0)
+
+			document.kirim.T2. value="bilangan genap"
+		else
+			document.kirim.T2. value="bilangan ganjil"
+		}
+	</script>
+<body>
+	<!-- form untuk memberikan method bil dan terdapat text yang dapat diinput lalu akan muncul pada T2 apakah bilangan tersebut genap atau ganjil ketika menekan button tebak -->
+	<form method="POST" name="kirim">
+		<p>BIL <input type="text" name="T1" size="20">Merupakan bilangan<input type="text" name="T2" size="20"></p>
+		<p><input type="button" name="B1" value="TEBAK" onclick=test()></p>
+	</form>
+</body>
+</html>

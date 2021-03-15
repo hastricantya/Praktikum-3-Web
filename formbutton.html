@@ -1,0 +1,44 @@
+<!-- Mendefinisikan tipe dokumen berupa html -->
+<html>
+	<!-- Memberikan judul pada tab browser -->
+	<head>
+		<title>Objek document</title>
+	</head>
+
+	<body>
+		<!-- Menanamkan script sisi klien (JavaScript) -->
+		<script language="Javascript">
+			// Blok kode untuk melakukan tugas tertentu
+			function ubahWarnaLB(warna){
+				document.bgColor = warna;
+			}
+			// Blok kode untuk melakukan tugas tertentu
+			function ubahWarnaLD(warna){
+				document.fgColor = warna;
+			}
+		</script>
+
+		<!-- Membuat header pada jendela browser -->
+		<h1>TES</h1>
+
+		<!-- Mendefinisikan form pada html -->
+		<form>
+			<!-- Membuat tombol yang dapat ditekan -->
+			<input type="BUTTON"
+				value="Latar Belakang Hijau"
+				onclick="ubahWarnaLB('green')">
+			<!-- Membuat tombol yang dapat ditekan -->
+			<input type="BUTTON"
+				value="Latar Belakang Putih"
+				onclick="ubahWarnaLB('White')">
+			<!-- Membuat tombol yang dapat ditekan -->
+			<input type="BUTTON"
+				value="Teks Kuning"
+				onclick="ubahWarnaLD('Yellow')">
+			<!-- Membuat tombol yang dapat ditekan -->
+			<input type="BUTTON"
+				value="Teks Biru"
+				onclick="ubahWarnaLD('Blue')">
+		</form>
+	</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<!-- bagian head -->
+<head>
+  <!-- memberi judul pada jendela browser -->
+  <title>Kalkulator Sederhana</title> 
+  <!-- bagian css untuk mendesain elemen pada html -->
+    <style type="text/css">
+      *{
+        /*font family dan font size digungakan untuk mengatur jenis font dan ukuran font*/
+        font-family: century-gothic;
+        font-size: 30px;  
+        margin: 0;
+      }
+      header{
+        /*mengatur gambar background dengan source ya.jpg, mengatur tinggi background, dan mengatur ukuran background*/
+        background-image: url(ya.jpg);
+        height:100vh;
+        background-size: cover;
+      } 
+      /*mengatur warna button*/
+      .tombol{
+        background-color: white;
+      }
+      /*mengatur margin dan posisi dari tabel*/
+      .tabel{
+        margin-left: 30%;
+        margin-top: 15%;
+        position: absolute;
+        background:white;
+      }
+    </style>
+</head>
+
+<!-- bagian body -->
+<body>
+  <!-- bagian header -->
+  <header>
+    <!-- mengatur form calculator dan membuat code untuk class table -->
+    <form name="calculator"> 
+       <table width="600" height="200" border="1" align="center" style= "background-color:" class="tabel">
+        <!-- membuat isian tabel -->
+          <tr>
+          <th colspan="3" scope="col"><center><blink>KALKULATOR</blink></center></th>
+          </tr>
+
+          <tr>
+          <td>Angka 1</td><td>:</td><td><input type="number" name="angka1"></td>
+          </tr>
+
+          <tr>
+          <td>Angka 2</td><td>:</td><td><input type="number" name="angka2"></td>
+          </tr>
+
+          <tr>
+          <td>Hasil</td><td>:</td><td><input type="number" name="hasil"></td>
+          </tr>
+
+          <tr>
+          <td colspan="3" align="center">
+            <!-- membuat input dengan class tombol untuk button pada kalkulator -->
+           <input class="tombol" type="button" onclick="tambah()" value="  +  ">
+           <input class="tombol" type="button" onclick="kurang()" value="  -  ">
+           <input class="tombol" type="button" onclick="kali()" value="  *  ">
+           <input class="tombol" type="button" onclick="bagi()" value="  /  ">
+          </td>
+          </tr>
+        </table>
+  </header>
+  </form>
+</body>
+</html>
+<!-- bagian javascript membuat function untuk masing-masing button -->
+  <script type="text/javascript"> 
+    function tambah(){
+     var angka1=parseFloat(document.calculator.angka1.value);
+     var angka2=parseFloat(document.calculator.angka2.value);
+     var hasil= angka1+angka2;
+     document.calculator.hasil.value=hasil;
+    }
+    function kurang(){
+     var angka1=parseFloat(document.calculator.angka1.value);
+     var angka2=parseFloat(document.calculator.angka2.value);
+     var hasil= angka1-angka2;
+     document.calculator.hasil.value=hasil;
+    }
+    function kali(){
+     var angka1=parseFloat(document.calculator.angka1.value);
+     var angka2=parseFloat(document.calculator.angka2.value);
+     var hasil= angka1*angka2;
+     document.calculator.hasil.value=hasil;
+    }
+    function bagi(){
+     var angka1=parseFloat(document.calculator.angka1.value);
+     var angka2=parseFloat(document.calculator.angka2.value);
+     var hasil= angka1/angka2;
+     document.calculator.hasil.value=hasil;
+    }
+  </script>

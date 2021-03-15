@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- title untuk memberikan judul pada jendela browser -->
+	<title>Contoh Program JavaScript</title>
+</head>
+<!-- untuk menuliskan fungsi test berupa varuabel val1 yang akan memunculkan prompt untuk memasukan angka range 1-5 -->
+<script language="JavaScript">
+	function test()
+	{
+		val1=window.prompt("Input Nilai (1-5):")
+		switch (val1)
+	{
+// berupa tiap-tiap case untuk memunculkan hasil bilangan berdasar abjad 1 hingga 5. Selain itu, akan memunculkan bilangan lainnya
+	case "1" :
+	document.write("Bilangan satu")
+	break
+	case "2" :
+	document.write("Bilangan dua")
+	break
+	case "3" :
+	document.write("Bilangan tiga")
+	break
+	case "4" :
+	document.write("Bilangan empat")
+	break
+	case "5" :
+	document.write("Bilangan lima")
+	break
+
+	default:
+	document.write("Bilangan lainnya")
+	}
+	}
+</script>
+<body>
+	<!-- untuk memberi input button agar ketika ditekan memunculkan prompt untuk mengisi nilai-->
+	<input type="button" name="button1" value="switch" onclick=test()>
+</body>
+</html>

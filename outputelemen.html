@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Writing into an HTML Element with Javascript</title>
+</head>
+<body>
+	<p id="greet"></p>
+	<p id="result"></p>
+
+	<script>
+		//menulis text string didalam sebuah elemen
+		document.getElementById("greet").innerHTML = "Hello Gatot!";
+
+		//menulis nilai variabel didalam sebuah elemen
+		var x = 50;
+		var y = 30;
+		var sum = x + y;
+		document.getElementById("result").innerHTML = sum;
+	</script>
+</body>
+</html>
